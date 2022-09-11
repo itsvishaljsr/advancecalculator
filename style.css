@@ -18,7 +18,7 @@ body {
 	justify-content: center;
 	align-items: center;
     margin-top: -27px;
-    background: url("./mountains-1412683.svg") center center/cover no-repeat fixed;
+    background: url("./background.jpg") center center/cover no-repeat fixed;
     object-fit: contain;
 }
 
