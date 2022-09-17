@@ -28,8 +28,6 @@ body{
 	flex-wrap: wrap;
 }
 
-
-
 .subject {
 	margin-top: 41px;
 	margin-bottom: 10px;
@@ -183,7 +181,7 @@ button:hover {
 	display: flex;
 	text-decoration: none;
 	margin-top: 20px;
-    margin-left: 61px;
+    margin-left: 111px;
 }
 .creator a{
 	color: whitesmoke;
