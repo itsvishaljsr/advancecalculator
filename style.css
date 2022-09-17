@@ -2,35 +2,45 @@ html {
 	font-family: 'Montserrat', sans-serif;
 }
 
+
 *,
 ::before,
 ::after {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	text-decoration: none;
 }
-
-body {
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
 	min-height: 100vh;
 	background-color: #f6ebeb;
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    margin-top: -27px;
-    background: url("./background.jpg") center center/cover no-repeat fixed;
-    object-fit: contain;
+	margin-top: -27px;
+	background: url("./background.jpg") center center/cover no-repeat fixed;
+	object-fit: contain;
+	flex-wrap: wrap;
 }
 
+
+
 .subject {
-    margin: 39px;
-    padding: 14px 19px;
-    border-radius: 25px;
-    box-shadow: inset -3px -3px 10px #fff, inset 3px 3px 10px rgb(0 0 0 / 15%);
+	margin-top: 41px;
+	margin-bottom: 10px;
+	padding: 14px 19px;
+	border-radius: 25px;
+	box-shadow: inset -3px -3px 10px #fff, inset 3px 3px 10px rgb(0 0 0 / 15%);
 }
 
 .product {
-    display: flex;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .calculator {
@@ -53,8 +63,8 @@ body {
 	justify-content: space-between;
 	border-radius: 30px;
 	padding: 20px;
-    margin: 6px 10px;
-    margin-bottom: 23px;
+	margin: 6px 10px;
+	margin-bottom: 23px;
 	font-size: 15px;
 }
 
@@ -72,16 +82,17 @@ body {
 }
 
 .container {
-    height: 704px;
-    width: 437px;
-    padding: 20px 14px;
-    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 46%);
-    border-radius: 32px;
+	height: 704px;
+	width: 437px;
+	padding: 20px 14px;
+	box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 46%);
+	border-radius: 32px;
 }
+
 .panel {
 	height: 80%;
-    width: 386px;
-    /* margin-right: 20px; */
+	width: 386px;
+	/* margin-right: 20px; */
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(5, 1fr);
@@ -91,7 +102,7 @@ body {
 button {
 	width: 95px;
 	height: 95px;
-    margin: 3px;
+	margin: 3px;
 	font-size: 25px;
 	background-color: #f3ecec;
 	box-shadow: -3px -3px 10px #fff, 3px 3px 10px rgba(0, 0, 0, 0.15);
@@ -103,10 +114,10 @@ button {
 }
 
 .equal {
-    width: 88px;
-    height: 195px;
-    margin: 7px 7px;
-    border-radius: 50px;
+	width: 88px;
+	height: 195px;
+	margin: 7px 7px;
+	border-radius: 50px;
 }
 
 button:hover {
@@ -127,7 +138,7 @@ button:hover {
 	width: 150px;
 	background-color: #f3ecec;
 	box-shadow: inset -3px -3px 10px #fff, inset 3px 3px 10px rgba(0, 0, 0, 0.15);
-	padding: 5px 10px; 
+	padding: 5px 10px;
 	font-weight: bold;
 	text-align: center;
 	margin-left: 30px;
@@ -146,7 +157,7 @@ button:hover {
 .history-btn {
 	background-color: #f6ebeb;
 	height: 35px;
-    width:99px;
+	width: 99px;
 	border: none;
 	font-size: 15px;
 	padding: 8px;
@@ -156,6 +167,7 @@ button:hover {
 	outline: none;
 	margin: 5px auto;
 }
+
 .history-btn.active {
 	display: block;
 }
@@ -165,4 +177,80 @@ button:hover {
 	letter-spacing: 1px;
 	border-bottom: 1px solid rgba(29, 27, 27, 0.233);
 	padding-bottom: 5px;
+}
+
+.creator{
+	display: flex;
+	text-decoration: none;
+	margin-top: 5px;
+    margin-left: 61px;
+}
+.creator a{
+	color: whitesmoke;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    letter-spacing: 5px;
+}
+
+.cp-text{
+	margin-top: 2px;
+	color: rgba(255, 255, 255, 0.7);
+	text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	.subject{
+		margin-top: 52px;
+		margin-bottom: 39px;
+	}
+	button {
+		
+		width: 132px;
+		height: 132px;
+	}
+
+	.equal {
+		width: 132px;
+		height: 262px;
+		margin: 7px 7px;
+		border-radius: 80px;
+	}
+
+	.calculator-history {
+		/* height: 65vh; */
+		height: 200px;
+		width: 645px;
+
+
+	}
+
+	.product {
+
+		display: flex;
+		flex-wrap: wrap;
+		/* flex-direction: row-reverse; */
+		align-content: center;
+		justify-content: center;
+
+	}
+	
+	.display{
+		width: 550px;
+		height: 190px;
+	}
+
+	.container{
+		height: 950px;
+		width: 600px;
+	}
+
+	.creator {
+		margin-top: 57px;
+		margin-left: 61px;
+	}
+	.cp-text{
+		margin-top: 15px;
+	}
 }
