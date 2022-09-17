@@ -207,43 +207,39 @@ button:hover {
 	}
 	button {
 		
-		width: 132px;
-		height: 132px;
+		width: 106px;
+		height: 98px;
 	}
 
 	.equal {
-		width: 132px;
-		height: 262px;
-		margin: 7px 7px;
-		border-radius: 80px;
+		width: 90px;
+		height: 198px;
+		margin: 7px 13px;
+		border-radius: 120px;
 	}
 
 	.calculator-history {
-		/* height: 65vh; */
 		height: 200px;
 		width: 645px;
-
-
 	}
 
 	.product {
 
 		display: flex;
 		flex-wrap: wrap;
-		/* flex-direction: row-reverse; */
 		align-content: center;
 		justify-content: center;
 
 	}
 	
 	.display{
-		width: 550px;
+		width: 435px;
 		height: 190px;
 	}
 
 	.container{
-		height: 950px;
-		width: 600px;
+		height: 786px;
+		width: 484px;
 	}
 
 	.creator {
