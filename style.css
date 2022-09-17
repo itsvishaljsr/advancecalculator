@@ -182,7 +182,7 @@ button:hover {
 .creator{
 	display: flex;
 	text-decoration: none;
-	margin-top: 5px;
+	margin-top: 20px;
     margin-left: 61px;
 }
 .creator a{
